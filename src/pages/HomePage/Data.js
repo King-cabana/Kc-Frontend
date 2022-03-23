@@ -9,12 +9,13 @@ export const homeObjOne = {
      imgStart:'', 
      lightTopLine:true, 
      lightTextDesc:true, 
-     buttonLabel:'Plan event', 
-     description: ' Wanna plan your event, now is the time .', 
-     headline:' Event is now ', 
+     buttonLabel:'Create event', 
+     description: ' Build your event history on this platform, so prospective event sponsors can view previous reports and strategic partnerships can be formed.', 
+     headline:' Do you need sponsorship for your event?', 
      lightText: false,
-     topLine: 'Digital event planner',
+     topLine: 'Thinking of how to make your event memorable?',
      img: FourImg,
+      // Img: require('../../images/girl1.jpg'),
      alt:'Image',
      start:''
 }; 

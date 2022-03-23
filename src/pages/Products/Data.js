@@ -1,5 +1,5 @@
 import FourImg from '../../../src/images/svg3.svg';
-import Girl1Img from '../../../src/images/girl1.jpg';
+
 import ThirdImg from '../../../src/images/svg1.svg';
 import FirstImg from '../../../src/images/svg2.svg'
 

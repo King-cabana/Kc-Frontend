@@ -2,12 +2,12 @@ import styled from 'styled-components'
 import { Container} from '../../globalStyles'
 import FirstImg from '../../../src/images/svg2.svg'
 
-import {FaMagento} from 'react-icons/fa';
+// import {FaMagento} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 
 
 export const Nav = styled.nav`
-background: purple;
+background: #fff;
 height: 60px;
 display: flex;
 justify-content: center;
@@ -36,7 +36,6 @@ display: flex;
 align-items: center;
 
 `
-{/*export const NavIcon = styled(FaMagento)` */}
 export const NavIcon = styled(FirstImg)`
 
 margin-right: 0.5rem;
@@ -44,10 +43,12 @@ margin-right: 0.5rem;
 export const MobileIcon = styled.div`
 display: none;
 padding-top: 15px;
-@media screen and (max-width:960px){
+/* @media screen and (max-width:960px){ */
+@media screen and (max-width:768px){
     display:block;
     position: absolute;
-   
+    background-color:green;
+    float: center;
     top: 0;
     right: 0;
     transform: tanslate(-100%, 60%);
@@ -60,6 +61,7 @@ display: flex;
 align-items: center;
 list-style: none;
 text-align: center;
+font-size: 15px;
 
 @media screen and (max-width: 960px){
     display: flex;
@@ -95,12 +97,13 @@ border-bottom: 2px solid transparent;
 `
 
 export const NavLinks = styled(Link)`
-color: #fff;
+color: black;
 display: flex;
 align-items: center;
 text-decoration: none;
 padding: 0.5rem 1rem;
 height: 100%;
+
 
 @media screen and (max-width: 960px){
     text-align: center;
@@ -137,7 +140,7 @@ width: 80%;
 border: none;
 outline: none; 
 margin-top: 20px ;
-
+color: green;
 
 @media screen and(max-width:960px){
    
@@ -215,5 +218,21 @@ cursor:pointer;
 
 export const LogoImg = styled.div`
 margin-top:5px;
+display: flex
 
 `
+
+export const FormSelect = styled.select`
+  
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin-right: 10px 10px ;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border: 1px solid purple;
+  
+  &::placeholder {
+    color: #242424
+  }
+  `

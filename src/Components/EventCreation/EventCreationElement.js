@@ -23,7 +23,7 @@ export const FormInput = styled.input`
   border: none;
   font-size: 16px;
   border: 1px solid purple;
-  width: 60%;
+  width: 25%;
   
   &::placeholder {
     color: #242424;
@@ -35,6 +35,33 @@ export const FormInput = styled.input`
     margin: 0 0 16px 0;
   }
 `;
+
+export const EventDescription = styled.textarea`
+  
+  padding: 10px 20px;
+
+  margin-right: 10px 10px ;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border: 1px solid purple;
+  width: 25%;
+  height: 100%;
+  border-radius: 5px;
+  
+  &::placeholder {
+    color: #242424;
+  
+  }
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+`;
+
+
+
 
 export const FormSelect = styled.select`
   
@@ -74,7 +101,12 @@ export const SigninLink = styled(Link)`
 @media screen and (max-width: 960px){
       width: 100%;
     }
-
+`
+export const TicketLink = styled(Link)`
+color: white;
+@media screen and (max-width: 960px){
+      width: 100%;
+    }
 `
 
 export const Button = styled.button`
@@ -138,4 +170,26 @@ export const FormCheckBox = styled.input`
   margin-right: 100px 50px;
   background-color: red;
 
+`;
+
+export  const TitleImage = styled.img`
+ width: 300px;
+  height: 200px;
+  /* border-radius: 50%; */
+  cursor: pointer;
+`;
+
+export const ImageButton = styled.button`
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: none;
+  background: lightpink;
+  width: 300px;
+  height: 200px;
+  border-radius: 5%;
+  cursor: pointer;
+  
 `;

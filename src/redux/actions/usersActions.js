@@ -11,7 +11,7 @@ export const setUsers = (users)  =>{
 
 export const selectUser = (user) =>{
     return{
-        type: ActionTypes.SELECT_USER,
+        type: ActionTypes.SELECTED_USERS,
         payload: user,
     };
 };

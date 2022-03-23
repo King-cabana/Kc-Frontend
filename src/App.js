@@ -13,6 +13,7 @@ import Login from './pages/LoginPage/Login';
 import EventCreation from './Components/EventCreation/EventCreation';
 import EventBlog from './Components/Blog/Blog'
 import UserComponent from './redux/userComponent';
+import background from '../src/images/Group 192.svg'
 
 
 // import InfoSection from './Components/InfoSection/InfoSection'
@@ -26,7 +27,6 @@ function App (){
         <ScrollToTop />
         <Navbar />
         <Switch >
-        
         <Route path="/" exact component={Home} />
         <Route path="/services" exact component={Services} />
         <Route path="/products" exact component={Products} />
@@ -35,10 +35,7 @@ function App (){
         <Route path="/eventCreation" exact component={EventCreation}/>
         <Route path="/eventblog" exact component={EventBlog}/>
         <Route path="/UserComponent" exact component={UserComponent}/>
-        
-        
         </Switch>
-       
         <Footer/>
         </Router>
     );

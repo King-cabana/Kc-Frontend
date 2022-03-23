@@ -10,7 +10,7 @@ export const homeObjOne = {
      lightTopLine:true, 
      lightTextDesc:true, 
      buttonLabel:'Plan event', 
-     description: ' Wanna plan your event, now is the time .', 
+     description: ' Wanna plan your event? Now is the time.', 
      headline:' Event is now ', 
      lightText: false,
      topLine: 'Digital event planner',

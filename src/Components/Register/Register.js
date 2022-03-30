@@ -27,9 +27,9 @@ import { SigninLink } from './RegisterElement'
 import { FormInput } from './RegisterElement'
 import background from '../../images/bg.png'
 
-function Register () {
+function Register ({
+}) {
     return (
-       
         <Body style={{ backgroundImage: `url(${background})`}}>
             <SideBar>
                 <ImgWrap>
@@ -65,12 +65,12 @@ function Register () {
             <RegisterLink  to="/register">
             <Button to="/register" >Sign up</Button>
             </RegisterLink>
-        </Form>
-        <Log>
-        Already have an account?<SigninLink to="/signin"><Span to="/signin"> Sign in</Span></SigninLink>
-        </Log>
+            </Form>
+            <Log>
+            Already have an account?<SigninLink to="/signin"><Span to="/signin"> Sign in</Span></SigninLink>
+            </Log>
             </FormSide>
-            </Body>
+          </Body>
     )
 }
 

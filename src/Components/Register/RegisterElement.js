@@ -82,7 +82,6 @@ export const Form = styled.form`
   margin: 50px 200px 50px 200px;
 
   @media screen and (max-width: 1024px) {
-    flex-direction: column;
     width: 100%;
     margin: 0;
   }

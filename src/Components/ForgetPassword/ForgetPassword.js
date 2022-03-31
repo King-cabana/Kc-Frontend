@@ -1,7 +1,21 @@
 import React, { useState } from 'react'
-import { Button, ForgotPasswordHeader, Form, FormInput } from './ForgetPasswordElement'
+import {
+  Body,
+  SideBar,
+  ImgWrap,
+  Img,
+  Button,
+  ForgotPasswordHeader,
+  FPassHead,
+  FPass,
+  Form,
+  FormInput,
+  FormSide
+} from './ForgetPasswordElement'
 import axios from 'axios'
 import { withRouter } from 'react-router'
+import happyToast from '../../images/Mask Group 26@2x.png'
+import background from '../../images/bg.png'
 
 const ForgetPassword = (props) => {
 
@@ -29,23 +43,23 @@ const onChange = (e) => {
 
 
   return (
-    <div>
+    <Body style={{ backgroundImage: `url(${background})`}}>
+      <SideBar>
+                <ImgWrap>
+                <Img src={happyToast} alt='Toast'/>
+                </ImgWrap>
+            </SideBar>
+   <FormSide>
    <Form onSubmit={resetForgotPassword}>
    <ForgotPasswordHeader>
-   <h1>Forget password</h1>
-   <p>We will be sending a reset password link to your email</p>
+   <FPassHead>Forgot password</FPassHead>
+   <FPass>Please enter email address used to register. A reset password link will be sent to you</FPass>
    </ForgotPasswordHeader>
-    
-   <FormInput type="email" placeholder="Your email" 
-   value={data.email} onChange={onChange} name="email"/>
-
- 
-
-   <Button>
-   <strong>Send</strong>
-   </Button>
+   <FormInput type="email" placeholder="Email" value={data.email} onChange={onChange} name="email"/>
+   <Button>Send Link</Button>
    </Form>
-    </div>
+   </FormSide>
+    </Body>
   )
 }
 

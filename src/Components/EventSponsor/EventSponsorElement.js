@@ -98,3 +98,60 @@ margin: 10px;
 export const ButtonBox = styled.div`
 display: flex;
 `
+
+export const Skip = styled.input`
+background-color: blue;
+border-radius: 4px;
+width: 150px;
+height: 50px;
+margin: 5px;
+white-space: nowrap;
+padding: '12px 64px';
+
+color: #fff;
+font-size: '20px' ;
+outline:none;
+border:none;
+cursor:pointer;
+
+
+&:hover{
+    transition: all 0.3s ease-out;
+    background: purple;
+    background:  'blue' };
+
+    @media screen and (max-width: 960px){
+      width: 100%;
+    }
+`
+
+export const PopImage = styled.img`
+border-radius: 31px;
+width: 300px;
+height: 150px;
+`
+
+export const PopBox = styled.div`
+width: 40vw;
+margin-left: 25vw;
+`
+
+export const PopHead = styled.h1`
+margin-top: 30px;
+`
+
+export const PopButton = styled.button`
+margin: 10px 0 30px 0;
+background-color: #267832;
+border-radius: 6px;
+width: 150px;
+height: 50px;
+white-space: nowrap;
+padding: '12px 64px';
+color: #fff;
+font-size: '20px' ;
+outline: none;
+border: none;
+box-shadow: 0px 24px 48px #2C273857;
+cursor: pointer;
+`

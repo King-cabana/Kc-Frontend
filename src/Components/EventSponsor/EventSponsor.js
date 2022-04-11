@@ -1,7 +1,22 @@
 // import React from 'react'
-import {  FormInput, Form, Button, EventSponsorHeader,
-    TitleImage, ImageButton, EventHeader, ButtonBox } from './EventSponsorElement'
-import React,{useState, useRef, useEffect} from 'react'
+import {
+  FormInput,
+  Form,
+  Button,
+  EventSponsorHeader,
+  TitleImage,
+  ImageButton,
+  EventHeader,
+  ButtonBox,
+  Skip,
+  PopImage,
+  PopBox,
+  PopHead,
+  PopButton
+} from './EventSponsorElement'
+import PopUp from './PopUp';
+import React, {useState, useRef, useEffect} from 'react'
+import Banner from '../../images/Banner.png'
 const EventSponsor = () => {
 
     const [image, setImage] = useState();
@@ -23,8 +38,11 @@ const EventSponsor = () => {
 	
 	const fileInputRef = useRef();
 
-
-
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
 
 
     return (
@@ -74,9 +92,27 @@ const EventSponsor = () => {
 
         <ButtonBox>
         <Button>Save</Button>
-        <Button>Skip sponsor</Button>
+        <Skip type='button' value="Skip Sponsor" onClick={togglePopup} />
         </ButtonBox>
         </Form>
+
+        {isOpen && <PopUp
+  content={
+  <PopBox>
+    <PopHead>Preview</PopHead>
+    <p>Event details are shown below</p>
+    <PopImage src={Banner} alt="Event Banner" />
+    <h2>TECH UNITE AFRICA</h2>
+    <p>Wed, Mar 16</p>
+    <p>9:00 AM</p>
+    <p>Muson Centre Lagos • LA</p>
+    <p>Invite from: Jan 8 - Feb 23</p>
+    <p>Expected guest: 74</p>
+    <p>Fee: Free</p>
+    <PopButton>Create Event</PopButton>
+  </PopBox>}
+  handleClose={togglePopup}
+/>}
         </div>
     )
 }

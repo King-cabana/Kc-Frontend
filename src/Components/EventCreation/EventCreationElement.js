@@ -15,6 +15,41 @@ background: #B6D982;
 }
 `
 
+export const Menu = styled.div`
+display: flex;
+flex-direction: column;
+width: 100%;
+margin-top: 20px;
+`
+
+export const MenuButton = styled.button`
+background: none;
+color: #267832;
+width: 100%;
+height: 50px;
+text-align: left;
+padding-left: 100px;
+white-space: nowrap;
+font-size: 16px;
+outline: none;
+border: none;
+cursor: pointer;
+
+&:hover {
+  background: transparent linear-gradient(180deg, #A8C9AD 0%, #267832 100%) 0% 0% no-repeat padding-box;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  width: 0;
+  display: none;
+}
+`
+
+export const MenuLink = styled(Link)`
+text-decoration: none;
+`
+
 export const Main = styled.div`
 margin: 50px 0 50px 100px;
 width: 70%;
@@ -47,6 +82,114 @@ width: 90%;
 float: right;
 `
 
+export const Timeline = styled.section`
+margin: 30px 0;
+padding: 15px;
+`
+
+export const Line = styled.div`
+background: #D4F51B;
+width: 750px;
+height: 4px;
+border-radius: 12px;
+position: relative;
+
+@media screen and (max-width: 1280px) {
+  width: 500px;
+}
+
+@media screen and (max-width: 1024px) {
+  width: 400px;
+}
+
+@media screen and (max-width: 412px) {
+  width: 300px;
+}
+`
+
+export const InnerLine = styled.span`
+position: relative;
+background: #267832;
+width: 2%;
+height: 4px;
+top: 0%;
+left: 0%;
+transition: 3s linear;
+border-radius: 999px;
+`
+
+export const List = styled.ul`
+margin-top: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+padding: 0;
+`
+
+export const ListNo = styled.li`
+position: relative;
+`
+
+export const TimelinePoint = styled.span`
+border: none;
+position: absolute;
+text-align: center;
+justify-items: center;
+border-radius: 50%;
+background: white;
+width: 20px;
+height: 20px;
+top: -40px;
+left: 0;
+transition: 1.5s ease;
+box-shadow: 0px 3px 6px #00000029;
+
+@media screen and (max-width: 1280px) {
+  left: -100px;
+}
+
+@media screen and (max-width: 1024px) {
+  left: -60px;
+}
+
+@media screen and (max-width: 412px) {
+  left: 0px;
+}
+`
+
+export const Action = styled.span`
+opacity: 0;
+transition: 1.5s;
+font-size: 12px;
+position: relative;
+top: -60px;
+left: 100%;
+`
+
+export const Steps = styled.p`
+transform: translate(-20px, -10px);
+opacity: 1;
+padding: 0 159px 0 0;
+font-size: 12px;
+transition: 1.5s;
+
+@media screen and (max-width: 1280px) {
+  transform: translate(-100px, -10px);
+  padding: 0 80px 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  transform: translate(-60px, -10px);
+  padding: 0 45px 0 0;
+}
+
+@media screen and (max-width: 412px) {
+  transform: translate(0px, -10px);
+  padding: 0 40px 0 0;
+}
+`
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
@@ -61,7 +204,7 @@ export const Form = styled.form`
 export const FormSquare = styled.div`
 display: flex;
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
  flex-direction : column;
 }
 `
@@ -88,6 +231,10 @@ margin-bottom: 20px;
 
 export const Choose = styled.div`
 margin-right: 50px;
+
+@media screen and (max-width: 412px) {
+ margin-right : 30px;
+}
 `
 
 export const Radio = styled.input`
@@ -139,7 +286,7 @@ box-shadow: 0px 10px 20px #2C27381A;
     opacity: 0.5;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     width: 450px;
   }
 
@@ -186,7 +333,7 @@ export const FormSelect = styled.select`
     opacity: 0.5;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     width: 450px;
   }
 
@@ -200,14 +347,20 @@ export const EventTime = styled.div`
 display: flex;
 width: 100%;
 
+@media screen and (max-width: 1200px) {
+  width: 450px;
+}
+
 @media screen and (max-width: 820px) {
     flex-direction: column;
+    width: 100%;
   }
 `
 
 export const EventStart = styled.div`
 display: flex;
 flex-direction: column;
+width: 100%;
 margin-right: 20px;
 
 @media screen and (max-width: 820px) {
@@ -218,6 +371,7 @@ margin-right: 20px;
 export const EventEnd = styled.div`
 display: flex;
 flex-direction: column;
+width: 100%;
 margin-left: 20px;
 
 @media screen and (max-width: 820px) {
@@ -245,8 +399,9 @@ export const SigninLink = styled(Link)`
     }
 `
 export const TicketLink = styled(Link)`
-color: white;
 text-decoration: none;
+width: 150px;
+height: 50px;
 
 @media screen and (max-width: 960px){
     width: 450px;
@@ -262,7 +417,6 @@ background-color: #267832;
 border-radius: 6px;
 width: 150px;
 height: 50px;
-margin-bottom: 10px;
 white-space: nowrap;
 padding: '12px 64px';
 color: #fff;
@@ -288,6 +442,7 @@ margin: 10px;
 
 export const ButtonBox = styled.div`
 display: flex;
+margin-bottom: 20px;
 
 @media screen and (max-width: 960px){
       flex-direction: column;
@@ -302,7 +457,7 @@ export  const TitleImage = styled.img`
   box-shadow: 0px 10px 20px #2C27381A;
   cursor: pointer;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     width: 450px;
   }
 
@@ -325,7 +480,7 @@ display: flex;
   box-shadow: 0px 10px 20px #2C27381A;
   cursor: pointer;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     width: 450px;
   }
 

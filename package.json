@@ -7,11 +7,17 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.24.0",
+<<<<<<< HEAD
     "bootstrap-icons": "^1.8.1",
     "chokidar": "^3.5.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-horizontal-timeline": "^1.5.3",
+=======
+    "chokidar": "^3.5.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+>>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
     "react-icons": "^4.1.0",
     "react-redux": "^7.2.6",
     "react-router-dom": "^5.2.0",

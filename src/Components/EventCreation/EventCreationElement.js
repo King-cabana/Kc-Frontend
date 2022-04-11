@@ -15,7 +15,6 @@ background: #B6D982;
 }
 `
 
-<<<<<<< HEAD
 export const Menu = styled.div`
 display: flex;
 flex-direction: column;
@@ -51,8 +50,6 @@ export const MenuLink = styled(Link)`
 text-decoration: none;
 `
 
-=======
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
 export const Main = styled.div`
 margin: 50px 0 50px 100px;
 width: 70%;
@@ -85,7 +82,6 @@ width: 90%;
 float: right;
 `
 
-<<<<<<< HEAD
 export const Timeline = styled.section`
 margin: 30px 0;
 padding: 15px;
@@ -194,8 +190,6 @@ transition: 1.5s;
 }
 `
 
-=======
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
@@ -237,13 +231,10 @@ margin-bottom: 20px;
 
 export const Choose = styled.div`
 margin-right: 50px;
-<<<<<<< HEAD
 
 @media screen and (max-width: 412px) {
  margin-right : 30px;
 }
-=======
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
 `
 
 export const Radio = styled.input`
@@ -356,7 +347,6 @@ export const EventTime = styled.div`
 display: flex;
 width: 100%;
 
-<<<<<<< HEAD
 @media screen and (max-width: 1200px) {
   width: 450px;
 }
@@ -364,20 +354,13 @@ width: 100%;
 @media screen and (max-width: 820px) {
     flex-direction: column;
     width: 100%;
-=======
-@media screen and (max-width: 820px) {
-    flex-direction: column;
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
   }
 `
 
 export const EventStart = styled.div`
 display: flex;
 flex-direction: column;
-<<<<<<< HEAD
 width: 100%;
-=======
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
 margin-right: 20px;
 
 @media screen and (max-width: 820px) {
@@ -388,10 +371,7 @@ margin-right: 20px;
 export const EventEnd = styled.div`
 display: flex;
 flex-direction: column;
-<<<<<<< HEAD
 width: 100%;
-=======
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
 margin-left: 20px;
 
 @media screen and (max-width: 820px) {
@@ -419,14 +399,9 @@ export const SigninLink = styled(Link)`
     }
 `
 export const TicketLink = styled(Link)`
-<<<<<<< HEAD
 text-decoration: none;
 width: 150px;
 height: 50px;
-=======
-color: white;
-text-decoration: none;
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
 
 @media screen and (max-width: 960px){
     width: 450px;
@@ -442,10 +417,6 @@ background-color: #267832;
 border-radius: 6px;
 width: 150px;
 height: 50px;
-<<<<<<< HEAD
-=======
-margin-bottom: 10px;
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
 white-space: nowrap;
 padding: '12px 64px';
 color: #fff;
@@ -471,10 +442,7 @@ margin: 10px;
 
 export const ButtonBox = styled.div`
 display: flex;
-<<<<<<< HEAD
 margin-bottom: 20px;
-=======
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
 
 @media screen and (max-width: 960px){
       flex-direction: column;

@@ -98,7 +98,6 @@ margin: 10px;
 export const ButtonBox = styled.div`
 display: flex;
 `
-<<<<<<< HEAD
 
 export const Skip = styled.input`
 background-color: blue;
@@ -156,5 +155,3 @@ border: none;
 box-shadow: 0px 24px 48px #2C273857;
 cursor: pointer;
 `
-=======
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d

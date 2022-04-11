@@ -1,5 +1,4 @@
 // import React from 'react'
-<<<<<<< HEAD
 import {
   FormInput,
   Form,
@@ -18,11 +17,6 @@ import {
 import PopUp from './PopUp';
 import React, {useState, useRef, useEffect} from 'react'
 import Banner from '../../images/Banner.png'
-=======
-import {  FormInput, Form, Button, EventSponsorHeader,
-    TitleImage, ImageButton, EventHeader, ButtonBox } from './EventSponsorElement'
-import React,{useState, useRef, useEffect} from 'react'
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
 const EventSponsor = () => {
 
     const [image, setImage] = useState();
@@ -44,16 +38,11 @@ const EventSponsor = () => {
 	
 	const fileInputRef = useRef();
 
-<<<<<<< HEAD
   const [isOpen, setIsOpen] = useState(false);
  
   const togglePopup = () => {
     setIsOpen(!isOpen);
   }
-=======
-
-
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
 
 
     return (
@@ -103,7 +92,6 @@ const EventSponsor = () => {
 
         <ButtonBox>
         <Button>Save</Button>
-<<<<<<< HEAD
         <Skip type='button' value="Skip Sponsor" onClick={togglePopup} />
         </ButtonBox>
         </Form>
@@ -125,13 +113,8 @@ const EventSponsor = () => {
   </PopBox>}
   handleClose={togglePopup}
 />}
-=======
-        <Button>Skip sponsor</Button>
-        </ButtonBox>
-        </Form>
->>>>>>> 47542899ceebd2b535d153be87c9affb9665137d
-        </div>
-    )
-}
 
+</div>
+)
+}
 export default EventSponsor

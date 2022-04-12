@@ -125,26 +125,49 @@ cursor:pointer;
     }
 `
 
+export const Name = styled.h2`
+color: #7F7F7F;
+`
+
+export const Info = styled.div`
+color: #707070C7;
+`
+
 export const PopImage = styled.img`
-border-radius: 31px;
-width: 300px;
+border-radius: 20px;
+margin: 30px 0 10px 0;
+width: 18vw;
 height: 150px;
+
+@media screen and (max-width: 612px) {
+  width: 100%;
+}
+`
+
+export const Note = styled.div`
+font-size: 14px;
+color: #707070C7;
 `
 
 export const PopBox = styled.div`
-width: 40vw;
-margin-left: 25vw;
+width: 25vw;
+margin: auto;
+
+@media screen and (max-width: 612px) {
+  width: 50vw;
+}
 `
 
 export const PopHead = styled.h1`
 margin-top: 30px;
+color: #267832;
 `
 
 export const PopButton = styled.button`
-margin: 10px 0 30px 0;
+margin: 30px 0 30px 0;
 background-color: #267832;
 border-radius: 6px;
-width: 150px;
+width: 100%;
 height: 50px;
 white-space: nowrap;
 padding: '12px 64px';

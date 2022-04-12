@@ -35,6 +35,7 @@ import {
   TitleImage,
   EventDescription,
   DateTime,
+  Bar,
   Timeline,
   Line,
   InnerLine,

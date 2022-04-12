@@ -9,6 +9,9 @@ import {
   EventHeader,
   ButtonBox,
   Skip,
+  Note,
+  Name,
+  Info,
   PopImage,
   PopBox,
   PopHead,
@@ -100,15 +103,17 @@ const EventSponsor = () => {
   content={
   <PopBox>
     <PopHead>Preview</PopHead>
-    <p>Event details are shown below</p>
+    <Note>Ensure that every detail is captured correctly and accurately</Note>
     <PopImage src={Banner} alt="Event Banner" />
-    <h2>TECH UNITE AFRICA</h2>
+    <Name>TECH UNITE AFRICA</Name>
+    <Info>
     <p>Wed, Mar 16</p>
     <p>9:00 AM</p>
-    <p>Muson Centre Lagos • LA</p>
+    <p>Muson Centre • Lagos, LA</p>
     <p>Invite from: Jan 8 - Feb 23</p>
     <p>Expected guest: 74</p>
-    <p>Fee: Free</p>
+    <p>Fee: Free </p>
+    </Info>
     <PopButton>Create Event</PopButton>
   </PopBox>}
   handleClose={togglePopup}

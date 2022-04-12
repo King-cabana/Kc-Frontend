@@ -82,6 +82,8 @@ width: 90%;
 float: right;
 `
 
+export const Bar = styled.div``
+
 export const Timeline = styled.section`
 margin: 30px 0;
 padding: 15px;

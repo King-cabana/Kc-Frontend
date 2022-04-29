@@ -1,13 +1,15 @@
 import React from 'react'
-import { Register } from '../../Components'
-import { homeObjOne}from './Data'
+import { InfoSection} from '../../Components'
+import { homeObjThree}from './Data'
 
 
-const SignUp = () => {
+const Home = () => {
     return (
         <>
-          <Register {...homeObjOne } /> 
+          
+          <InfoSection {...homeObjThree } /> 
+         
         </>
     )
 }
-export default SignUp;
+export default Home;

@@ -123,6 +123,11 @@ padding-right: 0;
 border: 0;
 max-width: 100%;
 vertical-align: middle;
+<<<<<<< HEAD
 display: inline-block;
 max-height: 500px;
+=======
+display: inline-block; 
+ max-height: 1000px;
+>>>>>>> c8e7fa6 (recent implementations)
 `

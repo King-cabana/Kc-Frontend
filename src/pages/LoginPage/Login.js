@@ -1,6 +1,6 @@
 import React from 'react'
-import {Form, InfoContainer, Input, SuperContainer, InfoContainerTwo} from './LoginElement'
-import {Button} from '../../globalStyles'
+import { SuperContainer, InfoContainerTwo} from './LoginElement'
+// import {Button} from '../../globalStyles'
 import pics from  '../../images/event2.jpg'
 import pic1 from  '../../images/event4.jpg'
 import pic2 from  '../../images/event5.jpg'
@@ -11,12 +11,12 @@ const Login = () => {
         <div>
         <SuperContainer>
        
-       <InfoContainerTwo><img src={pics} width="100%" height="100%"/></InfoContainerTwo>
-       <InfoContainerTwo><img src={pic1} width="100%" height="100%"/></InfoContainerTwo>
-       <InfoContainerTwo><img src={pic2} width="100%" height="100%"/></InfoContainerTwo>
-       <InfoContainerTwo><img src={pic3} width="100%" height="100%"/></InfoContainerTwo>
-       <InfoContainerTwo><img src={pics} width="100%" height="100%"/></InfoContainerTwo>
-       <InfoContainerTwo><img src={pic1} width="100%" height="100%"/></InfoContainerTwo>
+       <InfoContainerTwo><img src={pics}  alt={""} width="100%" height="100%"/></InfoContainerTwo>
+       <InfoContainerTwo><img src={pic1}    alt={""} width="100%" height="100%"/></InfoContainerTwo>
+       <InfoContainerTwo><img src={pic2}  alt={""} width="100%" height="100%"/></InfoContainerTwo>
+       <InfoContainerTwo><img src={pic3}   alt={""} width="100%" height="100%"/></InfoContainerTwo>
+       <InfoContainerTwo><img src={pics}   alt={""} width="100%" height="100%"/></InfoContainerTwo>
+       <InfoContainerTwo><img src={pic1}  alt={""} width="100%" height="100%"/></InfoContainerTwo>
        
         </SuperContainer>
             

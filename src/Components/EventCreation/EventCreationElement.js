@@ -252,6 +252,35 @@ box-shadow: 0px 10px 20px #2C27381A;
   }
 `
 
+export const Choice = styled.button`
+margin-right: 20px;
+background-color: #fff;
+border-radius: 6px;
+width: 120px;
+height: 40px;
+white-space: nowrap;
+padding: '12px 64px';
+color: #7f7f7f;
+font-size: '20px' ;
+outline: none;
+border: 1px solid #979797;
+cursor: pointer;
+
+&:hover {
+  color: #fff;
+  background-color: #B6D982;
+  border: none;
+}
+
+  @media screen and (max-width: 960px){
+    width: 450px;
+    }
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
+`
+
 export const FormInput = styled.input`
   padding: 10px 20px;
   border-radius: 6px;

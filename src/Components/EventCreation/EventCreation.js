@@ -13,7 +13,7 @@ import {
   EventHeader, RightInput, ButtonBox, TicketLink,
   ImageButton, TitleImage, EventDescription, DateTime,
   Bar, Timeline, Line, InnerLine, List, ListNo,
-  TimelinePoint, Action, Steps
+  TimelinePoint, Action, Steps, Choice
 } from './EventCreationElement'
 // import background from '../../images/bg.png'
 
@@ -133,9 +133,9 @@ const EventCreation = () => {
           <FormSquare>
           <Left>
           <Select>
-            <Choose><Radio type="radio" id="Physical" name="Platform" value="Physical"/><label for='Physical'>Physical</label></Choose>
-            <Choose><Radio type="radio" id="Virtual" name="Platform" value="Virtual"/><label for='Virtual'>Virtual</label></Choose>
-            <Choose><Radio type="radio" id="Both" name="Platform" value="Both"/><label for='Both'>Both</label></Choose>
+          <Choice to="/event-ticket">Physical</Choice>
+          <Choice to="/event-ticket">Virtual</Choice>
+          <Choice to="/event-ticket">Both</Choice>
           </Select>
             <FormInput type="link" placeholder="Online Link" name="organiser" />
             <FormInput type="text" placeholder="Physical Address" name="organiser" />
@@ -180,8 +180,8 @@ const EventCreation = () => {
           <FormSquare>
           <Left>
             <Select>
-            <Choose><Radio type="radio" id="single" name="Platform" value="single"/><label for='single'>Single Event</label></Choose>
-            <Choose><Radio type="radio" id="recurring" name="Platform" value="recurring"/><label for='recurring'>Recurring Event</label></Choose>
+            <Choice to="/event-ticket">Single Event</Choice>
+            <Choice to="/event-ticket">Recurring Event</Choice>
             </Select>
             <EventTime>
             <EventStart>
@@ -216,4 +216,5 @@ const EventCreation = () => {
         </Body>
     )
   }
+
 export default EventCreation;

@@ -1,7 +1,31 @@
 // import React from 'react'
-import {  FormInput, Form, Button, EventSponsorHeader,
-    TitleImage, ImageButton, EventHeader, ButtonBox } from './EventSponsorElement'
-import React,{useState, useRef, useEffect} from 'react'
+// <<<<<<< HEAD
+// import {  FormInput, Form, Button, EventSponsorHeader,
+//     TitleImage, ImageButton, EventHeader, ButtonBox } from './EventSponsorElement'
+// import React,{useState, useRef, useEffect} from 'react'
+// =======
+import {
+  FormInput,
+  Form,
+  Button,
+  EventSponsorHeader,
+  TitleImage,
+  ImageButton,
+  EventHeader,
+  ButtonBox,
+  Skip,
+  Note,
+  Name,
+  Info,
+  PopImage,
+  PopBox,
+  PopHead,
+  PopButton
+} from './EventSponsorElement'
+import PopUp from './PopUp';
+import React, {useState, useRef, useEffect} from 'react'
+import Banner from '../../images/Banner.png'
+// >>>>>>> 1a968c2c3b4d39bddcdfedf678828b4f12f55703
 const EventSponsor = () => {
 
     const [image, setImage] = useState();
@@ -23,8 +47,16 @@ const EventSponsor = () => {
 	
 	const fileInputRef = useRef();
 
+// <<<<<<< HEAD
 
 
+// =======
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
+// >>>>>>> 1a968c2c3b4d39bddcdfedf678828b4f12f55703
 
 
     return (
@@ -74,6 +106,7 @@ const EventSponsor = () => {
 
         <ButtonBox>
         <Button>Save</Button>
+{/*<<<<<<< HEAD */}
         <Button>Skip sponsor</Button>
         </ButtonBox>
         </Form>
@@ -81,4 +114,34 @@ const EventSponsor = () => {
     )
 }
 
-export default EventSponsor
+// export default EventSponsor
+// =======
+//         <Skip type='button' value="Skip Sponsor" onClick={togglePopup} />
+//         </ButtonBox>
+//         </Form>
+
+//         {isOpen && <PopUp
+//   content={
+//   <PopBox>
+//     <PopHead>Preview</PopHead>
+//     <Note>Ensure that every detail is captured correctly and accurately</Note>
+//     <PopImage src={Banner} alt="Event Banner" />
+//     <Name>TECH UNITE AFRICA</Name>
+//     <Info>
+//     <p>Wed, Mar 16</p>
+//     <p>9:00 AM</p>
+//     <p>Muson Centre • Lagos, LA</p>
+//     <p>Invite from: Jan 8 - Feb 23</p>
+//     <p>Expected guest: 74</p>
+//     <p>Fee: Free </p>
+//     </Info>
+//     <PopButton>Create Event</PopButton>
+//   </PopBox>}
+//   handleClose={togglePopup}
+// />}
+
+// </div>
+// )
+// }
+// export default EventSponsor
+// // >>>>>>> 1a968c2c3b4d39bddcdfedf678828b4f12f55703

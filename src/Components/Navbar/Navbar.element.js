@@ -235,4 +235,4 @@ export const FormSelect = styled.select`
   &::placeholder {
     color: #242424
   }
-  `
+`

@@ -1,7 +1,27 @@
 import React, { useState } from 'react'
-import { Button, ForgotPasswordHeader, Form, FormInput } from './ForgetPasswordElement'
+
+// import { Button, ForgotPasswordHeader, Form, FormInput } from './ForgetPasswordElement'
+// import axios from 'axios'
+// import { withRouter } from 'react-router'
+
+import {
+  Body,
+  SideBar,
+  ImgWrap,
+  Img,
+  Button,
+  ForgotPasswordHeader,
+  FPassHead,
+  FPass,
+  Form,
+  FormInput,
+  FormSide
+} from './ForgetPasswordElement'
 import axios from 'axios'
 import { withRouter } from 'react-router'
+import happyToast from '../../images/Mask Group 26@2x.png'
+import background from '../../images/bg.png'
+
 
 const ForgetPassword = (props) => {
 
@@ -29,6 +49,7 @@ const onChange = (e) => {
 
 
   return (
+// <<<<<<< HEAD
     <div>
    <Form onSubmit={resetForgotPassword}>
    <ForgotPasswordHeader>
@@ -46,6 +67,25 @@ const onChange = (e) => {
    </Button>
    </Form>
     </div>
+// =======
+//     <Body style={{ backgroundImage: `url(${background})`}}>
+//       <SideBar>
+//                 <ImgWrap>
+//                 <Img src={happyToast} alt='Toast'/>
+//                 </ImgWrap>
+//             </SideBar>
+//    <FormSide>
+//    <Form onSubmit={resetForgotPassword}>
+//    <ForgotPasswordHeader>
+//    <FPassHead>Forgot password</FPassHead>
+//    <FPass>Please enter email address used to register. A reset password link will be sent to you</FPass>
+//    </ForgotPasswordHeader>
+//    <FormInput type="email" placeholder="Email" value={data.email} onChange={onChange} name="email"/>
+//    <Button>Send Link</Button>
+//    </Form>
+//    </FormSide>
+//     </Body>
+// >>>>>>> 1a968c2c3b4d39bddcdfedf678828b4f12f55703
   )
 }
 

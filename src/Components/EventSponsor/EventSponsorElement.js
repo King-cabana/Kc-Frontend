@@ -98,3 +98,86 @@ margin: 10px;
 export const ButtonBox = styled.div`
 display: flex;
 `
+// <<<<<<< HEAD
+// =======
+
+export const Skip = styled.input`
+background-color: blue;
+border-radius: 4px;
+width: 150px;
+height: 50px;
+margin: 5px;
+white-space: nowrap;
+padding: '12px 64px';
+
+color: #fff;
+font-size: '20px' ;
+outline:none;
+border:none;
+cursor:pointer;
+
+
+&:hover{
+    transition: all 0.3s ease-out;
+    background: purple;
+    background:  'blue' };
+
+    @media screen and (max-width: 960px){
+      width: 100%;
+    }
+`
+
+export const Name = styled.h2`
+color: #7F7F7F;
+`
+
+export const Info = styled.div`
+color: #707070C7;
+`
+
+export const PopImage = styled.img`
+border-radius: 20px;
+margin: 30px 0 10px 0;
+width: 18vw;
+height: 150px;
+
+@media screen and (max-width: 612px) {
+  width: 100%;
+}
+`
+
+export const Note = styled.div`
+font-size: 14px;
+color: #707070C7;
+`
+
+export const PopBox = styled.div`
+width: 25vw;
+margin: auto;
+
+@media screen and (max-width: 612px) {
+  width: 50vw;
+}
+`
+
+export const PopHead = styled.h1`
+margin-top: 30px;
+color: #267832;
+`
+
+export const PopButton = styled.button`
+margin: 30px 0 30px 0;
+background-color: #267832;
+border-radius: 6px;
+width: 100%;
+height: 50px;
+white-space: nowrap;
+padding: '12px 64px';
+color: #fff;
+font-size: '20px' ;
+outline: none;
+border: none;
+box-shadow: 0px 24px 48px #2C273857;
+cursor: pointer;
+`
+// >>>>>>> 1a968c2c3b4d39bddcdfedf678828b4f12f55703

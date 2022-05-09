@@ -189,11 +189,10 @@ export const Form = styled.form`
   flex-direction: column;
   margin: 20px;
   @media screen and (max-width: 820px) {
-    flex-direction: column;
     margin: 0;
     width: 100%;
   }
-`;
+`
 
 export const InfoBox = styled.div`
 border: 1px solid #707070;
@@ -218,7 +217,7 @@ display: flex;
 flex-direction: column;
 margin-right: 30px;
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1024px) {
   margin: 0;
 }
 `
@@ -233,29 +232,10 @@ display: flex;
 margin-bottom: 20px;
 `
 
-export const Choose = styled.div`
-margin-right: 50px;
-
-@media screen and (max-width: 412px) {
- margin-right : 30px;
-}
-`
-
-export const Radio = styled.input`
-margin-right: 10px;
-box-shadow: 0px 10px 20px #2C27381A;
-
-&::placeholder {
-    color: #7F7F7F;
-    opacity: 0.5;
-
-  }
-`
-
 export const Choice = styled.button`
 margin-right: 20px;
 background-color: #fff;
-border-radius: 6px;
+border-radius: 26px;
 width: 120px;
 height: 40px;
 white-space: nowrap;
@@ -272,36 +252,78 @@ cursor: pointer;
   border: none;
 }
 
-  @media screen and (max-width: 960px){
-    width: 450px;
-    }
-
-  @media screen and (max-width: 820px) {
-    width: 100%;
+@media screen and (max-width: 960px){
+  width: 450px;
   }
+
+@media screen and (max-width: 820px) {
+  width: 100%;
+}
 `
 
 export const FormInput = styled.input`
-  padding: 10px 20px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  outline: none;
-  border: none;
-  font-size: 16px;
-  border: 1px solid #267832;
-  width: 450px;
-  box-shadow: 0px 10px 20px #2C27381A;
-  
-  &::placeholder {
-    color: #7F7F7F;
-    opacity: 0.5;
-  }
+padding: 10px 20px;
+border-radius: 6px;
+margin-bottom: 20px;
+outline: none;
+border: none;
+font-size: 16px;
+border: 1px solid #267832;
+width: 450px;
+box-shadow: 0px 10px 20px #2C27381A;
 
-  @media screen and (max-width: 820px) {
-    width: 100%;
-    margin: 0 0 16px 0;
-  }
-`;
+&::placeholder {
+  color: #7F7F7F;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 820px) {
+  width: 100%;
+  margin: 0 0 16px 0;
+}
+`
+
+export const Area = styled.div`
+display: flex;
+margin-bottom: 20px;
+`
+
+export const City = styled.input`
+padding: 10px 20px;
+border-radius: 6px;
+outline: none;
+border: none;
+font-size: 16px;
+width: 215px;
+margin-right: 10px;
+border: 1px solid #267832;
+box-shadow: 0px 10px 20px #2C27381A;
+
+@media screen and (max-width: 1200) {
+  width: 35%;
+}
+
+&::placeholder {
+  color: #7F7F7F;
+  opacity: 0.5;
+}
+`
+
+export const Country = styled.select`
+padding: 10px 20px;
+border-radius: 6px;
+outline: none;
+border: none;
+font-size: 16px;
+width: 215px;
+margin-left: 10px;
+border: 1px solid #267832;
+box-shadow: 0px 10px 20px #2C27381A;
+
+@media screen and (max-width: 1200) {
+  width: 35%;
+}
+`
 
 export const RightInput = styled.input`
 padding: 10px 20px;
@@ -320,7 +342,7 @@ box-shadow: 0px 10px 20px #2C27381A;
   }
 
   @media screen and (max-width: 1200px) {
-    width: 450px;
+    width: 300px;
   }
 
   @media screen and (max-width: 820px) {
@@ -329,26 +351,52 @@ box-shadow: 0px 10px 20px #2C27381A;
 `
 
 export const DateTime = styled.input`
-  padding: 10px 20px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  outline: none;
-  font-size: 16px;
-  border: 1px solid #267832;
+padding: 10px 20px;
+border-radius: 6px;
+margin-bottom: 20px;
+outline: none;
+font-size: 16px;
+border: 1px solid #267832;
+height: 40px;
+width: 100%;
+box-shadow: 0px 10px 20px #2C27381A;
+
+&::placeholder {
+  color: #7F7F7F;
+  opacity: 0.5;
+
+}
+
+@media screen and (max-width: 820px) {
   width: 100%;
-  box-shadow: 0px 10px 20px #2C27381A;
-  
-  &::placeholder {
+  margin: 0 0 16px 0;
+}
+`
+
+export const TimeZone = styled.select`
+padding: 10px 20px;
+border-radius: 6px;
+margin-bottom: 20px;
+outline: none;
+border: none;
+font-size: 16px;
+border: 1px solid #267832;
+width: 300px;
+box-shadow: 0px 10px 20px #2C27381A;
+
+&::placeholder {
     color: #7F7F7F;
     opacity: 0.5;
-  
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 300px;
   }
 
   @media screen and (max-width: 820px) {
     width: 100%;
-    margin: 0 0 16px 0;
   }
-`;
+`
 
 export const FormSelect = styled.select`
   padding: 10px 20px;
@@ -374,7 +422,7 @@ export const FormSelect = styled.select`
     width: 100%;
     margin: 0 0 16px 0;
   }
-`;
+`
 
 export const EventTime = styled.div`
 display: flex;
@@ -427,6 +475,7 @@ export const SigninLink = styled(Link)`
       width: 450px;
     }
 `
+
 export const TicketLink = styled(Link)`
 text-decoration: none;
 width: 150px;
@@ -447,9 +496,7 @@ border-radius: 6px;
 width: 150px;
 height: 50px;
 white-space: nowrap;
-padding: '12px 64px';
 color: #fff;
-font-size: '20px' ;
 outline: none;
 border: none;
 box-shadow: 0px 10px 20px #2C27381A;
@@ -480,8 +527,8 @@ margin-bottom: 20px;
 
 export  const TitleImage = styled.img`
   width: 300px;
-  height: 149px;
-  margin-bottom: 20px;
+  height: 162px;
+  margin-top: 37px;
   border-radius: 6px;
   box-shadow: 0px 10px 20px #2C27381A;
   cursor: pointer;
@@ -493,7 +540,7 @@ export  const TitleImage = styled.img`
   @media screen and (max-width: 820px) {
     width: 100%;
   }
-`;
+`
 
 export const ImageButton = styled.button`
 display: flex;
@@ -501,10 +548,10 @@ display: flex;
   justify-content: center;
   font-size: 18px;
   border: 1px solid #267832;
-  margin-bottom: 20px;
+  margin-top: 37px;
   background: #fff;
   width: 300px;
-  height: 149px;
+  height: 162px;
   border-radius: 6px;
   box-shadow: 0px 10px 20px #2C27381A;
   cursor: pointer;

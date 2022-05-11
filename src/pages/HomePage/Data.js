@@ -1,5 +1,6 @@
-import FourImg from '../../../src/images/event8.jpg';
+import FourImg from '../../../src/images/boy.png';
 import Girl1Img from '../../../src/images/img2.png';
+
 
 
 export const homeObjOne = {

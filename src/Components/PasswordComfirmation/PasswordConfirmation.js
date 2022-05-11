@@ -47,6 +47,8 @@ const PasswordConfirmation = (props) => {
     <h1>Reset Password</h1>
     <p>Please enter new password in fields below</p>
     </ConfirmPasswordHeader>
+
+    <FormInput type="password" placeholder="Your OTP" name="password" onChange={onChange}/>
      
     <FormInput type="password" placeholder="New password" name="password" onChange={onChange}/>
    

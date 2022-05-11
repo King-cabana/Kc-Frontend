@@ -43,7 +43,7 @@ function App (){
         <Route path="/" exact component={Home} />
         <Route path="/services" exact component={Services} />
         <Route path="/products" exact component={Products} />
-        <Route path="/signin" exact component={Signin} />
+      <Route path="/signin" exact component={Signin} />
         <Route path="/register" exact component={Register} />
         <Route path="/eventCreation" exact component={EventCreation}/>
         <Route path="/eventblog" exact component={EventBlog}/>
@@ -56,6 +56,7 @@ function App (){
        {/*  <Route path="/UserComponent" exact component={UserComponent}/> */}
         <Route path="/event-ticket" exact component={EventTicketing}/>
         <Route path="/dashboard" exact component={DashBoard}/>
+        
         
         </Switch>
       {/*    

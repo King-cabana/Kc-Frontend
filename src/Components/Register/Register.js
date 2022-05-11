@@ -77,7 +77,7 @@ const Register = (props) => {
         {(window.innerWidth > 768)?
           <SideBarBox>
           <SideBarBoxImg>
-          <img src={SideBarPics} alt={""} height={250}  width={250} />
+          <img src={SideBarPics} alt={""} height={260}  width={260} />
           </SideBarBoxImg>
           
           </SideBarBox>:null

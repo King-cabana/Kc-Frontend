@@ -15,12 +15,17 @@ import {
   FPass,
   Form,
   FormInput,
-  FormSide
+  FormSide,
+  ParentBoxOfForgotPassword
 } from './ForgetPasswordElement'
+
+import { FormBox } from '../Signin/SigninElement'
 import axios from 'axios'
 import { withRouter } from 'react-router'
-import happyToast from '../../images/Mask Group 26@2x.png'
+
 import background from '../../images/bg.png'
+import SideBarPics from '../../images/boy.png'
+import { SideBarBox, SideBarBoxImg} from '../Signin/SigninElement'
 
 
 const ForgetPassword = (props) => {
@@ -50,22 +55,40 @@ const onChange = (e) => {
 
   return (
 // <<<<<<< HEAD
-    <div>
-   <Form onSubmit={resetForgotPassword}>
-   <ForgotPasswordHeader>
-   <h1>Forget password</h1>
-   <p>We will be sending a reset password link to your email</p>
-   </ForgotPasswordHeader>
-    
-   <FormInput type="email" placeholder="Your email" 
-   value={data.email} onChange={onChange} name="email"/>
+    <div style={{ backgroundImage: `url(${background})`}}>
+    <ParentBoxOfForgotPassword>
+    {(window.innerWidth > 768)?
+      <SideBarBox>
+      <SideBarBoxImg>
+      <img src={SideBarPics} alt={""} height={250}  width={250} />
+      </SideBarBoxImg>
+      
+      </SideBarBox>:null
+  }
+        <FormSide>
+        <FormBox>
+        
+        <Form onSubmit={resetForgotPassword}>
+        <ForgotPasswordHeader>
+        <h1>Forget password</h1>
+        <p>We will be sending a reset password link to your email</p>
+        </ForgotPasswordHeader>
+         
+        <FormInput type="email" placeholder="Your email" 
+        value={data.email} onChange={onChange} name="email"/>
+     
+      
+     
+        <Button>
+        <strong>Send</strong>
+        </Button>
+        </Form>
 
- 
-
-   <Button>
-   <strong>Send</strong>
-   </Button>
-   </Form>
+        </FormBox>
+        </FormSide>
+  
+    </ParentBoxOfForgotPassword>
+       
     </div>
 // =======
 //     <Body style={{ backgroundImage: `url(${background})`}}>

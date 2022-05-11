@@ -9,7 +9,6 @@ height: 100%;
 export const SideBar = styled.div`
 width: 30%;
 background: #B6D982;
-
 @media screen and (max-width: 960px) {
   width: 0;
 }
@@ -34,12 +33,10 @@ font-size: 16px;
 outline: none;
 border: none;
 cursor: pointer;
-
 &:hover {
   background: transparent linear-gradient(180deg, #A8C9AD 0%, #267832 100%) 0% 0% no-repeat padding-box;
   font-weight: bold;
 }
-
 @media screen and (max-width: 960px) {
   width: 0;
   display: none;
@@ -54,12 +51,10 @@ export const Main = styled.div`
 margin: 50px 20px 50px 20px;
 width: 70%;
 height: 100%;
-
 @media screen and (max-width: 960px) {
     width: 100%;
     margin: 50px 0 50px 200px;
 }
-
 @media screen and (max-width: 820px) {
     margin: 50px 20px 0 20px;
 }
@@ -87,15 +82,12 @@ width: 750px;
 height: 4px;
 border-radius: 12px;
 position: relative;
-
 @media screen and (max-width: 1280px) {
   width: 500px;
 }
-
 @media screen and (max-width: 1024px) {
   width: 400px;
 }
-
 @media screen and (max-width: 412px) {
   width: 300px;
 }
@@ -138,15 +130,12 @@ top: -40px;
 left: 0;
 transition: 1.5s ease;
 box-shadow: 0px 3px 6px #00000029;
-
 @media screen and (max-width: 1280px) {
   left: -100px;
 }
-
 @media screen and (max-width: 1024px) {
   left: -60px;
 }
-
 @media screen and (max-width: 412px) {
   left: 0px;
 }
@@ -167,17 +156,14 @@ opacity: 1;
 padding: 0 159px 0 0;
 font-size: 12px;
 transition: 1.5s;
-
 @media screen and (max-width: 1280px) {
   transform: translate(-100px, -10px);
   padding: 0 80px 0 0;
 }
-
 @media screen and (max-width: 1024px) {
   transform: translate(-60px, -10px);
   padding: 0 45px 0 0;
 }
-
 @media screen and (max-width: 412px) {
   transform: translate(0px, -10px);
   padding: 0 40px 0 0;
@@ -207,7 +193,6 @@ export const FormSquare = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-
 @media screen and (max-width: 1200px) {
  flex-direction : column;
 }
@@ -217,7 +202,6 @@ export const Left = styled.div`
 display: flex;
 flex-direction: column;
 margin-right: 30px;
-
 @media screen and (max-width: 820px) {
   margin: 0;
 }
@@ -235,7 +219,6 @@ margin-bottom: 20px;
 
 export const Choose = styled.div`
 margin-right: 50px;
-
 @media screen and (max-width: 412px) {
  margin-right : 30px;
 }
@@ -244,11 +227,9 @@ margin-right: 50px;
 export const Radio = styled.input`
 margin-right: 10px;
 box-shadow: 0px 10px 20px #2C27381A;
-
 &::placeholder {
     color: #7F7F7F;
     opacity: 0.5;
-
   }
 `
 
@@ -265,17 +246,14 @@ font-size: '20px' ;
 outline: none;
 border: 1px solid #979797;
 cursor: pointer;
-
 &:hover {
   color: #fff;
   background-color: #B6D982;
   border: none;
 }
-
   @media screen and (max-width: 960px){
     width: 450px;
     }
-
   @media screen and (max-width: 820px) {
     width: 100%;
   }
@@ -288,20 +266,14 @@ export const FormInput = styled.input`
   outline: none;
   border: none;
   font-size: 16px;
-/* <<<<<<< HEAD */
-  border: 1px solid purple;
-  width: 25%;
-/* ======= */
   border: 1px solid #267832;
   width: 450px;
   box-shadow: 0px 10px 20px #2C27381A;
-/* >>>>>>> 1a968c2c3b4d39bddcdfedf678828b4f12f55703 */
   
   &::placeholder {
     color: #7F7F7F;
     opacity: 0.5;
   }
-
   @media screen and (max-width: 820px) {
     width: 100%;
     margin: 0 0 16px 0;
@@ -318,16 +290,13 @@ font-size: 16px;
 border: 1px solid #267832;
 width: 300px;
 box-shadow: 0px 10px 20px #2C27381A;
-
 &::placeholder {
     color: #7F7F7F;
     opacity: 0.5;
   }
-
   @media screen and (max-width: 1200px) {
     width: 450px;
   }
-
   @media screen and (max-width: 820px) {
     width: 100%;
   }
@@ -348,39 +317,11 @@ export const DateTime = styled.input`
     opacity: 0.5;
   
   }
-
   @media screen and (max-width: 820px) {
     width: 100%;
     margin: 0 0 16px 0;
   }
 `;
-
-export const EventDescription = styled.textarea`
-  
-  padding: 10px 20px;
-
-  margin-right: 10px 10px ;
-  outline: none;
-  border: none;
-  font-size: 16px;
-  border: 1px solid purple;
-  width: 25%;
-  height: 100%;
-  border-radius: 5px;
-  
-  &::placeholder {
-    color: #242424;
-  
-  }
-
-  @media screen and (max-width: 820px) {
-    width: 100%;
-    margin: 0 0 16px 0;
-  }
-`;
-
-
-
 
 export const FormSelect = styled.select`
   padding: 10px 20px;
@@ -397,11 +338,9 @@ export const FormSelect = styled.select`
     color: #7F7F7F;
     opacity: 0.5;
   }
-
   @media screen and (max-width: 1200px) {
     width: 450px;
   }
-
   @media screen and (max-width: 820px) {
     width: 100%;
     margin: 0 0 16px 0;
@@ -411,7 +350,6 @@ export const FormSelect = styled.select`
 export const EventTime = styled.div`
 display: flex;
 width: 450px;
-
 @media screen and (max-width: 820px) {
     flex-direction: column;
     width: 100%;
@@ -423,7 +361,6 @@ display: flex;
 flex-direction: column;
 width: 100%;
 margin-right: 20px;
-
 @media screen and (max-width: 820px) {
     margin: 0;
   }
@@ -434,7 +371,6 @@ display: flex;
 flex-direction: column;
 width: 100%;
 margin-left: 20px;
-
 @media screen and (max-width: 820px) {
     margin: 0;
   }
@@ -447,39 +383,26 @@ align-items: center;
 text-decoration: none;
 padding: 0.5rem 1rem;
 height: 100%; */
-
 @media screen and (max-width: 960px){
       width: 100%;
     }
 `
 
 export const SigninLink = styled(Link)`
-
 @media screen and (max-width: 960px){
       width: 450px;
     }
 `
-// export const TicketLink = styled(Link)`
-// text-decoration: none;
-// width: 150px;
-// height: 50px;
-
-// @media screen and (max-width: 960px){
-//     width: 450px;
-//     }
-// <<<<<<< HEAD
-// `
 export const TicketLink = styled(Link)`
-color: white;
+text-decoration: none;
+width: 150px;
+height: 50px;
 @media screen and (max-width: 960px){
-      width: 100%;
+    width: 450px;
     }
-// =======
-
   @media screen and (max-width: 820px) {
     width: 100%;
   }
-// >>>>>>> 1a968c2c3b4d39bddcdfedf678828b4f12f55703
 `
 
 export const Button = styled.button`
@@ -495,11 +418,9 @@ outline: none;
 border: none;
 box-shadow: 0px 10px 20px #2C27381A;
 cursor: pointer;
-
   @media screen and (max-width: 960px){
     width: 450px;
     }
-
   @media screen and (max-width: 820px) {
     width: 100%;
   }
@@ -513,74 +434,79 @@ margin: 10px;
 export const ButtonBox = styled.div`
 display: flex;
 margin-bottom: 20px;
-
 @media screen and (max-width: 960px){
       flex-direction: column;
     }
 `
 
-// export  const TitleImage = styled.img`
-//   width: 300px;
-//   height: 149px;
-//   margin-bottom: 20px;
-//   border-radius: 6px;
-//   box-shadow: 0px 10px 20px #2C27381A;
-//   cursor: pointer;
-
-//   @media screen and (max-width: 1200px) {
-//     width: 450px;
-//   }
-
-//   @media screen and (max-width: 820px) {
-//     width: 100%;
-//   }
-// `;
-
-// export const ImageButton = styled.button`
-// display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: 18px;
-//   border: 1px solid #267832;
-//   margin-bottom: 20px;
-//   background: #fff;
-//   width: 300px;
-//   height: 149px;
-//   border-radius: 6px;
-//   box-shadow: 0px 10px 20px #2C27381A;
-//   cursor: pointer;
-
-// <<<<<<< HEAD
-// `;
-
 export  const TitleImage = styled.img`
- width: 300px;
-  height: 200px;
-  /* border-radius: 50%; */
+  width: 300px;
+  height: 149px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0px 10px 20px #2C27381A;
   cursor: pointer;
+  @media screen and (max-width: 1200px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
 `;
 
 export const ImageButton = styled.button`
-
 display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  border: none;
-  background: lightpink;
+  border: 1px solid #267832;
+  margin-bottom: 20px;
+  background: #fff;
   width: 300px;
-  height: 200px;
-  border-radius: 5%;
+  height: 149px;
+  border-radius: 6px;
+  box-shadow: 0px 10px 20px #2C27381A;
   cursor: pointer;
-  
-
-// =======
   @media screen and (max-width: 1200px) {
     width: 450px;
   }
-
   @media screen and (max-width: 820px) {
     width: 100%;
   }
 `
-// >>>>>>> 1a968c2c3b4d39bddcdfedf678828b4f12f55703
+
+export const EButtonBox = styled.div`
+display:flex ;
+margin:  5px;
+
+`
+
+export const BackButton = styled.div`
+padding-left:10% ;
+background-color:lightgreen ;
+/* margin:  5%; */
+
+`
+export const SaveButton = styled.div`
+padding-left:40% ;
+
+/* margin:  5px; */
+
+`
+
+export const  AiFillFileText = styled.div``
+
+export const  DisplayEndTime = styled.div``
+
+export const  EventPTag = styled.div``
+
+export const  FaClipboardList = styled.div``
+
+export const  FormCheckBox = styled.div``
+
+export const  GiReceiveMoney = styled.div``
+
+
+export const  IoCalendar = styled.div``
+
+export const  RiDashboardFill = styled.div``

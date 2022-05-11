@@ -1,10 +1,15 @@
 import React,{useState, useRef, useEffect} from 'react'
 
+import boy from  '../../images/boy.png'
 import {Button, Form, FormInput, FormSelect, 
   EventHeader, ButtonBox, DisplayEndTime, FormCheckBox, 
   EventPTag, TicketLink, ImageButton, TitleImage, Body,SideBar,Menu, MenuLink, 
-  MenuButton, RiDashboardFill, IoCalendar,
-  EventDescription} from './EventCreationElement'
+  MenuButton, RiDashboardFill, IoCalendar,Choice,FaClipboardList,GiReceiveMoney,
+  AiFillFileText,ImgWrap,Img,Main,Timeline,Line,InnerLine,List,ListNo,TimelinePoint,Steps,
+  InfoBox,FormSquare,Left,Right,RightInput,Select,EventTime,EventStart,DateTime,EventEnd,
+  BackButton, SaveButton,
+  EventDescription,
+  EButtonBox} from './EventCreationElement'
 
 const EventCreation = () => {
 
@@ -132,7 +137,8 @@ const EventCreation = () => {
             </Right>
             </FormSquare>
           </InfoBox>
-          <InfoBox>
+         
+         <InfoBox>
           <EventHeader>
           <h2>Location</h2>
           </EventHeader>
@@ -146,37 +152,39 @@ const EventCreation = () => {
             <FormInput type="link" placeholder="Online Link" name="organiser" />
             <FormInput type="text" placeholder="Physical Address" name="organiser" />
           </Left>
-          <Right>
+          
               {/*asdf*/}
-            {preview ? (
+              <Right>
+              {preview ? (
               
-              <TitleImage src={preview} alt={"preview"} style={{ objectFit: "cover" }} />
-              
-              ) : (
-              
-              <ImageButton
-                onClick={(event) => {
-                    event.preventDefault();
-                    fileInputRef.current.click();
-                  }}
-                >
-                  Add event Image
-              </ImageButton>
-              )}
-
-            <FormInput input type="file" style={{ display: "none" }}  ref={fileInputRef} 
-            accept="image/*"
-                  onChange={(event) => {
-                    const file = event.target.files[0];
-                    if (file && file.type.substr(0, 5) === "image") {
-                      setImage(file);
-                    } else {
-                      setImage(null);
-                    }
-                  }} />
-          </Right>
-          </FormSquare>
-          </InfoBox>
+                <TitleImage src={preview} alt={"preview"} style={{ objectFit: "cover" }} />
+                
+                ) : (
+                
+                <ImageButton
+                  onClick={(event) => {
+                      event.preventDefault();
+                      fileInputRef.current.click();
+                    }}
+                  >
+                    Add event Image
+                </ImageButton>
+                )}
+  
+              <FormInput input type="file" style={{ display: "none" }}  ref={fileInputRef} 
+              accept="image/*"
+                    onChange={(event) => {
+                      const file = event.target.files[0];
+                      if (file && file.type.substr(0, 5) === "image") {
+                        setImage(file);
+                      } else {
+                        setImage(null);
+                      }
+                    }} />
+            </Right>
+            </FormSquare>
+            </InfoBox>
+        
             
 
           <InfoBox>
@@ -210,100 +218,14 @@ const EventCreation = () => {
           </FormSquare>  
           </InfoBox>
 
-           <EventHeader>
-                <h1>Location</h1>
-                <p>Help attendees know where your event is going to hold</p>
-           </EventHeader>
-           
-            <ButtonBox>
-            <Button>Venue</Button>
-            <Button>Online</Button>
-            <Button>Will get intouch</Button>
-            </ButtonBox>
-
-
-            <EventHeader>
-            <label><strong>Hashtag</strong></label>
-        </EventHeader>
-        <FormInput type="text" placeholder="Create event hashtag" name="organiser" />
-
-            <EventHeader>
-                <h1>Date and time</h1>
-                <p>Help attendees know when your event is going to hold</p>
-            </EventHeader>
-           
-            <ButtonBox>
-            <TicketLink to="/event-ticket">
-            <Button to="/event-ticket">
-               <strong>Save/Next</strong> 
-            </Button>
-            </TicketLink>
-            </ButtonBox>
-            <EventHeader><label>Start date</label></EventHeader>
-            <FormInput type="date"  placeholder="1/13/2021"/>
-            <EventHeader><label>End date</label></EventHeader>
-            <FormInput type="date"  placeholder="1/13/2021"/>
-
-            <EventHeader><label>Start time</label></EventHeader>
-            <FormInput type="time"  placeholder="8:00 PM"/>
-            <EventHeader><label>End time</label></EventHeader>
-            <FormInput type="time"  placeholder="8:00 PM"  />
-
-            <DisplayEndTime>
-
-                 <FormCheckBox type="checkbox"/> 
-                 
-                <EventPTag>Display start time</EventPTag>
-
-                <FormCheckBox type="checkbox" />
-                <EventPTag>
-                Display end time
-                </EventPTag>
-            </DisplayEndTime>
-
-           
-
-            {/*asdf*/}
-            {preview ? (
-   
-              <TitleImage src={preview} alt={"preview"} style={{ objectFit: "cover" }} />
-             
-              
-             ) : (
-              
-             <ImageButton
-                onClick={(event) => {
-                   event.preventDefault();
-                   fileInputRef.current.click();
-                 }}
-               >
-                 Add event Image
-             </ImageButton>
-             )}
-
-             
-            <EventHeader><label><strong>Your event image</strong></label></EventHeader>
-            <FormInput input type="file" style={{ display: "none" }}  ref={fileInputRef} 
-            accept="image/*"
-                  onChange={(event) => {
-                    const file = event.target.files[0];
-                    if (file && file.type.substr(0, 5) === "image") {
-                      setImage(file);
-                    } else {
-                      setImage(null);
-                    }
-                  }} />
-          
-                  
-
-            <ButtonBox>
-            <Button >
-               <TicketLink to="/event-ticket">
-               <label><strong>Save</strong></label>
-               </TicketLink>
-            </Button>
-            
-            </ButtonBox>
+           <EButtonBox>
+                    <BackButton >
+                      <Button>Back</Button>
+                    </BackButton>
+                    <SaveButton>
+                      <Button>Save/Next</Button>
+                    </SaveButton>
+           </EButtonBox>
          </Form>
 
          

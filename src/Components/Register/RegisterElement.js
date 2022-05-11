@@ -79,37 +79,71 @@ export const Form = styled.form`
   justify-content: center;
   align-items: center;
   width: 487px;
-  margin: 50px 200px 50px 200px;
+  margin: 10px 200px 10px 200px;
+  /* margin:20px ; */
 
   @media screen and (max-width: 1024px) {
-<<<<<<< HEAD
-    flex-direction: column;
-=======
->>>>>>> c8e7fa6 (recent implementations)
-    width: 100%;
-    margin: 0;
+
   }
 `;
 
+export const ParentBoxOfSignIn = styled.div `
+/* width: 100%; */
+
+display:flex ;
+
+`
+
+export const SideBarBox = styled.div `
+width: 30%;
+background-color: #B6D982;
+`
+
+export const SideBarBoxImg = styled.div`
+padding: 200px 125px 100px;
+
+@media screen and (max-width: 960px){
+  padding: 180px 1px 80px;
+}
+`
+
+export const FormBox = styled.div`
+/* width: 70%; */
+width: 100% ;
+/* padding-left:-150px; */
+padding-left: 0%;
+color: green;
+margin: 20px;
+
+@media screen and (max-width: 768px) {
+    flex-direction: column;
+    /* width: 80%; */
+    padding:2px;
+  }
+`
+
+export const SignInHeader = styled.div`
+text-align: center;
+color: green ;
+/* margin: 10px; */
+` 
+
 export const FormInput = styled.input`
   padding: 10px 20px;
-  border-radius: 6px;
-  width: 100%;
+  border-radius: 2px;
+  margin: 10px ;
   outline: none;
-  font-size: 21px;
-  font-family: Roboto, sans-serif;
-  border: 1px solid #267832;
-  margin-bottom: 10px;
-  box-shadow: 0px 10px 20px #2C27381A;
+  border: none;
+  font-size: 16px;
+  border: 1px solid green;
   
   &::placeholder {
-    color: #7F7F7F;
-    opacity: 0.5;
+    color: #242424;
+  
   }
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
-    height: 70px;
     margin: 0 0 16px 0;
   }
 `;
@@ -154,11 +188,11 @@ align-self: flex-start;
 `
 
 export const Button = styled.button`
-background-color: #267832;
-border-radius: 6px;
-box-shadow: 0px 24px 48px #2C273857;
-width: 100%;
+background-color: green;
+border-radius: 4px;
+width: 250px;
 height: 50px;
+margin: 10px;
 white-space: nowrap;
 padding: '12px 64px';
 color: #fff;
@@ -167,12 +201,68 @@ outline:none;
 border:none;
 cursor:pointer;
 
-@media screen and (max-width: 960px){
-  width: 100%;
-}
+&:hover{
+    transition: all 0.3s ease-out;
+    background: lightgreen;
+  };
+
+    @media screen and (max-width: 768px){
+      width: 100%;
+    }
 `
 
 export const Span = styled.span`
 color: #267832;
 font-weight: bold;
 `
+
+export const IconBox = styled.div `
+/* margin: 10px */
+float:center;
+padding-left:320px ;
+display:flex ;
+
+
+@media screen and (max-width: 768px) {
+    /* flex-direction: column; */
+   
+    /* align-self: flex-start ; */
+    /* padding:2px; */
+    float: left ;
+    margin: 10px ;
+  }
+`
+
+export const IconContainer = styled.div` 
+margin: 5px ;
+`
+
+export const CheckBox = styled.div`
+ padding-left:110px;
+align-self: flex-start ;
+
+@media screen and (max-width: 768px) {
+    /* flex-direction: column; */
+   
+    align-self: flex-start ;
+    padding:2px;
+  }
+`
+
+export const BelowBox = styled.div`
+display: flex;
+width:100% ;
+/* background-color: grey ; */
+`
+export const BelowBoxSignIn = styled.div`
+/* float: left ; */
+/* background-color: pink ; */
+padding-left:5%;
+`
+export const BelowBoxForgotPassword = styled.div`
+/* float: right ; */
+/* width:40px; */
+/* background-color: red ; */
+padding-right: 10%;
+`
+

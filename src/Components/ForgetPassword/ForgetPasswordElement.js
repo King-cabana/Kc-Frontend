@@ -2,11 +2,18 @@ import styled from 'styled-components'
 
 import {Link} from 'react-router-dom'
 
+export const ParentBoxOfForgotPassword = styled.div `
+width: 100%;
 
+display:flex ;
+
+`
 export const ForgotPasswordHeader = styled.div`
-text-align: center;
-color: purple;
-margin: 20px;
+text-align: left;
+color: green;
+margin: 10px;
+
+
 
 ` 
 
@@ -17,7 +24,7 @@ height: 100%;
 
 export const SideBar = styled.div`
 width: 30%;
-background: #B6D982;
+background-color: #B6D982;
 
 @media screen and (max-width: 960px) {
   width: 0;
@@ -60,14 +67,9 @@ color: white;
 
 export const Button = styled.button`
 
-
-background-color: blue;
-border-radius: 4px;
-width: 150px;
-
 background-color: #267832;
 border-radius: 6px;
-width: 100%;
+width: 70%;
 
 height: 50px;
 margin: 5px;
@@ -84,7 +86,7 @@ cursor:pointer;
 
 &:hover{
     transition: all 0.3s ease-out;
-    background: purple;
+    background: lightgreen;
     background:  'blue' };
 
 color: #fff;
@@ -130,52 +132,36 @@ margin: 50px;
 
 export const Form = styled.form`
   display: flex;
-  padding: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 487px;
-  margin: 50px 200px 200px 200px;
+  margin: 20px;
 
-  @media screen and (max-width: 820px) {
-    width: 100%;
-    margin: 0;
-
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 80%;
   }
+
 `;
 
 export const FormInput = styled.input`
   
   padding: 10px 20px;
-
   border-radius: 2px;
-  margin-right: 10px 10px ;
+  margin: 15px ;
   outline: none;
   border: none;
   font-size: 16px;
-  border: 1px solid purple;
-  width: 25%;
+  border: 1px solid green;
+  width: 70%;
+  
   
   &::placeholder {
     color: #242424;
-  border-radius: 6px;
-  margin-bottom: 30px;
-  outline: none;
-  font-size: 21px;
-  font-family: Roboto, sans-serif;
-  border: none;
-  font-size: 16px;
-  border: 1px solid #267832;
-  width: 100%;
-  box-shadow: 0px 10px 20px #2C27381A;
   
-  &::placeholder {
-    color: #7F7F7F;
-    opacity: 0.5;
-
   }
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     margin: 0 0 16px 0;
   }

@@ -143,5 +143,5 @@ const EventSponsor = () => {
 // </div>
 // )
 // }
-// export default EventSponsor
+export default EventSponsor
 // // >>>>>>> 1a968c2c3b4d39bddcdfedf678828b4f12f55703

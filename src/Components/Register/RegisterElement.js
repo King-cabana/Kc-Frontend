@@ -82,13 +82,13 @@ export const Form = styled.form`
   margin: 10px 200px 10px 200px;
   /* margin:20px ; */
 
-  @media screen and (max-width: 1024px) {
-
+  @media screen and (max-width: 768px) {
+    margin: 10px 0px 10px 30px;
   }
 `;
 
 export const ParentBoxOfSignIn = styled.div `
-/* width: 100%; */
+width: 100%;
 
 display:flex ;
 
@@ -125,6 +125,7 @@ margin: 20px;
 export const SignInHeader = styled.div`
 text-align: center;
 color: green ;
+
 /* margin: 10px; */
 ` 
 
@@ -143,9 +144,12 @@ export const FormInput = styled.input`
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 50%;
     margin: 0 0 16px 0;
+    float: left;
   }
+
+  
 `;
 
 export const Log = styled.p`

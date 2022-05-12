@@ -91,7 +91,7 @@ const Navbar = () => {
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to='/eventCreation'>Create event</NavLinks>
+                                <NavLinks to='/eventCreation'>CreateEvent</NavLinks>
                             </NavItem>
 
                             <NavItem>

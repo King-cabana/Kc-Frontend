@@ -63,6 +63,7 @@ list-style: none;
 text-align: center;
 font-size: 15px;
 
+
 @media screen and (max-width: 960px){
     display: flex;
     flex-direction: column;
@@ -82,7 +83,6 @@ font-size: 15px;
 export const NavItem = styled.li`
 height: 80px;
 border-bottom: 2px solid transparent;
-
 &:hover{
     border-bottom: 2px solid #4b59f7;
 }

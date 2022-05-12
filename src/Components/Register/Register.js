@@ -145,13 +145,13 @@ const Register = (props) => {
   </Form>
   
       <BelowBox>
-        <BelowBoxSignIn><p>Already have an account?<strong> Sign in</strong></p></BelowBoxSignIn>
+        <BelowBoxSignIn><p>Already have an account?<strong><a href='/signin'>Sign in</a></strong></p></BelowBoxSignIn>
         <BelowBoxForgotPassword></BelowBoxForgotPassword>
         <BelowBoxForgotPassword></BelowBoxForgotPassword>
         <BelowBoxForgotPassword></BelowBoxForgotPassword>
         <BelowBoxForgotPassword></BelowBoxForgotPassword>
          
-        <BelowBoxForgotPassword><p><strong>Forgot password</strong></p></BelowBoxForgotPassword>
+        <BelowBoxForgotPassword><p><strong><a href='/forgetPassword'>Forgot password</a></strong></p></BelowBoxForgotPassword>
        
         </BelowBox>
       </FormBox>

@@ -278,6 +278,8 @@ cursor: pointer;
 
   @media screen and (max-width: 415px) {
   width: 95px;
+  border-radius: 10px;
+  height: 30px;
 }
 
 @media screen and (max-width: 412px) {
@@ -623,8 +625,7 @@ export const SigninLink = styled(Link)`
 
 export const TicketLink = styled(Link)`
 /* text-decoration: none; */
-margin-right: 0px;
-width: 100px;
+width: 450px;
 height: 50px;
 
 @media screen and (max-width: 960px){
@@ -632,8 +633,19 @@ height: 50px;
   }
 
   @media screen and (max-width: 820px) {
-    width: 100%;
-  }
+  width: 400px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 415px) {
+  width: 350px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
+  margin: 0 0 16px 0;
+}
 `
 
 export const PreviousLink = styled(Link)`
@@ -679,7 +691,7 @@ height: 50px;
 export const Button = styled.button`
 background-color: #267832;
 border-radius: 6px;
-width: 100px;
+width: 450px;
 height: 50px;
 white-space: nowrap;
 color: #fff;
@@ -693,9 +705,20 @@ cursor: pointer;
     margin: 0;
     }
 
-  @media screen and (max-width: 820px) {
-    width: 100%;
-  }
+    @media screen and (max-width: 820px) {
+  width: 400px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 415px) {
+  width: 350px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
+  margin: 0 0 16px 0;
+}
 `
 
 export const Forward = styled.button`

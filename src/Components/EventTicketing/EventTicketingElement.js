@@ -72,16 +72,35 @@ height: 100%;
 @media screen and (max-width: 820px) {
     margin: 50px 20px 0 20px;
 }
+
+@media screen and (max-width: 415px) {
+  width: 362px;
+}
+
+@media screen and (max-width: 376px) {
+  width: 340px;
+}
+
+@media screen and (max-width: 361px) {
+  width: 320px;
+}
+
+@media screen and (max-width: 281px) {
+  width: 250px;
+}
 `
 
 export const TicketHeader = styled.div`
 color: #267832;
-margin: 10px;
+margin: 30px 10px 10px 10px;
+
+@media screen and (max-width: 820px) {
+  margin: 0 10px 10px 10px;
+}
 `
 
 export const InfoBox = styled.div`
-border: 1px solid #707070;
-border-radius: 8px;
+border: none;
 opacity: 1;
 margin: 20px 0 20px 0;
 padding: 20px 40px;
@@ -137,7 +156,16 @@ color: white;
 }
 `;
 
+export const Left = styled.div`
+display: flex;
+flex-direction: column;
+margin-right: 30px;
 
+@media screen and (max-width: 1025px) {
+  margin: 0;
+  width: 100%;
+}
+`
 
 export const Button = styled.button`
 background-color: #267832;
@@ -165,6 +193,7 @@ display: flex;
 
 @media screen and (max-width: 960px){
       flex-direction: column;
+      margin-bottom: 20px;
     }
 `
 
@@ -180,7 +209,7 @@ export const Form = styled.form`
 
 export const Select = styled.div`
 display: flex;
-margin-bottom: 20px;
+margin-bottom: 40px;
 `
 
 export const Choice = styled.button`
@@ -219,6 +248,7 @@ outline: none;
 font-size: 16px;
 border: 1px solid #267832;
 width: 100%;
+height: 40px;
 box-shadow: 0px 10px 20px #2C27381A;
 
 &::placeholder {
@@ -235,6 +265,8 @@ box-shadow: 0px 10px 20px #2C27381A;
 
 export const Qty = styled.input`
 padding: 10px 20px;
+margin-top: 55px;
+margin-left: 15px;
 border-radius: 6px;
 outline: none;
 font-size: 16px;
@@ -257,7 +289,7 @@ box-shadow: 0px 10px 20px #2C27381A;
 
 export const Fee = styled.input`
 padding: 10px 20px;
-margin-top: 40px;
+margin-top: 55px;
 margin-right: 15px;
 border-radius: 6px;
 outline: none;
@@ -281,12 +313,24 @@ box-shadow: 0px 10px 20px #2C27381A;
 
 export const DateBox = styled.div`
 display: flex;
+
+@media screen and (max-width: 820px) {
+  flex-direction: column;
+}
 `
 
 export const EventDate = styled.div`
 display: flex;
 flex-direction: column;
-margin-top: 60px;
+margin-top: 20px;
+
+@media screen and (max-width: 1025px) {
+  width: 100%;
+}
+
+@media screen and (max-width: 820px) {
+  margin: 0;
+}
 `
 
 export const DateInput = styled.input`
@@ -297,11 +341,11 @@ border: none;
 font-size: 16px;
 border: 1px solid #267832;
 width: 250px;
+height: 40px;
 box-shadow: 0px 10px 20px #2C27381A;
 
-&::placeholder {
-  
-
+@media screen and (max-width: 1024px) {
+  width: 100%;
 }
 
 @media screen and (max-width: 820px) {
@@ -351,8 +395,12 @@ position: relative;
   width: 400px;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 415px) {
   width: 300px;
+}
+
+@media screen and (max-width: 281px) {
+  width: 200px;
 }
 `
 
@@ -436,6 +484,16 @@ transition: 1.5s;
 @media screen and (max-width: 412px) {
   transform: translate(0px, -10px);
   padding: 0 40px 0 0;
+}
+
+@media screen and (max-width: 360px) {
+  transform: translate(0px, -10px);
+  padding: 0 30px 0 0;
+}
+
+@media screen and (max-width: 281px) {
+  transform: translate(0px, -10px);
+  padding: 0 13px 0 0;
 }
 `
 

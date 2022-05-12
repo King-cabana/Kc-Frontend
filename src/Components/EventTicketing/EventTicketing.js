@@ -6,8 +6,9 @@ import { FaClipboardList } from 'react-icons/fa'
 import { GiReceiveMoney } from 'react-icons/gi'
 import { AiFillFileText } from 'react-icons/ai'
 
-import { DateBox, Fee, TicketLink, Choice, EventDate, Qty, DateInput, Sale, Date1, Date2, Timeline, Line, InnerLine, List, ListNo, TimelinePoint, Steps, TicketHeader, Add, SideBar, ImgWrap, Img, Menu, MenuButton, MenuLink, Select, ButtonBox, Button, Form, FormInput,FormSelect, EventNeedLinks, Main, Body, InfoBox, FormSquare } from './EventTicketingElement'
-import { Left, Right } from "../EventCreation/EventCreationElement";
+import { DateBox, Fee, TicketLink, Left, Choice, EventDate, Qty, DateInput, Sale, Date1, Date2, Timeline, Line, InnerLine, List, ListNo, TimelinePoint, Steps, TicketHeader, Add, SideBar, ImgWrap, Img, Menu, MenuButton, MenuLink, Select, ButtonBox, Button, Form, FormInput,FormSelect, EventNeedLinks, Main, Body, InfoBox, FormSquare } from './EventTicketingElement'
+import background from '../../images/bg.png'
+import { Back } from "../EventCreation/EventCreationElement";
 
 const EventTicketing = () => {
     const [image, setImage] = useState();
@@ -32,7 +33,7 @@ const EventTicketing = () => {
 	// const fileInputRef = useRef();
 
     return (
-        <Body>
+        <Body style={{ backgroundImage: `url(${background})` }}>
           <SideBar>
             <Menu>
             <MenuLink to="/event-ticket">
@@ -105,27 +106,24 @@ const EventTicketing = () => {
             <FormInput type="textbox" placeholder="Ticket Name/Title" name="ticket" />
             <DateBox>
               <Fee type="textbox" placeholder="Ticket Fee" name="fee" />
-            <Date1>
-              <TicketHeader><label>Start Date/Time</label></TicketHeader>
-              <DateInput type="datetime-local" />
-            </Date1>
+            <Qty type="textbox" placeholder="Quantity Available" name="qty" />
             </DateBox>
             </Sale>
            </Left>
 
-           <Right>
            <EventDate>
-           <Qty type="textbox" placeholder="Quantity Available" name="qty" />
-           <Date2>
+           <TicketHeader><label>Start Date/Time</label></TicketHeader>
+           <DateInput type="datetime-local" />
            <TicketHeader><label>End Date/Time</label></TicketHeader>
            <DateInput type="datetime-local"  />
-           </Date2>
            </EventDate>
-           </Right>
            </FormSquare>
            </InfoBox>
           
            <ButtonBox>
+             <Back to="/event-ticket">
+               <strong>Previous/Back</strong> 
+             </Back>
             <TicketLink to="/eventNeed">
             <Button to="/eventNeed">
                <strong>Save/Next</strong> 

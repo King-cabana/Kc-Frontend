@@ -57,11 +57,18 @@ height: 100%;
 
 @media screen and (max-width: 960px) {
     width: 100%;
-    margin: 50px 0 50px 200px;
 }
 
-@media screen and (max-width: 820px) {
-    margin: 50px 20px 0 20px;
+@media screen and (max-width: 415px) {
+  width: 370px;
+}
+
+@media screen and (max-width: 390px) {
+  width: 308px;
+}
+
+@media screen and (max-width: 281px) {
+  width: 248px;
 }
 `
 
@@ -96,8 +103,16 @@ position: relative;
   width: 400px;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 415px) {
   width: 300px;
+}
+
+@media screen and (max-width: 412px) {
+  width: 280px;
+}
+
+@media screen and (max-width: 281px) {
+  width: 200px;
 }
 `
 
@@ -182,6 +197,11 @@ transition: 1.5s;
   transform: translate(0px, -10px);
   padding: 0 40px 0 0;
 }
+
+@media screen and (max-width: 281px) {
+  transform: translate(0px, -10px);
+  padding: 0 15px 0 0;
+}
 `
 
 export const Form = styled.form`
@@ -198,7 +218,7 @@ export const InfoBox = styled.div`
 border: 1px solid #707070;
 border-radius: 8px;
 opacity: 1;
-margin: 20px 0 20px 0;
+margin: 20px 0;
 padding: 20px 40px;
 `
 
@@ -219,6 +239,8 @@ margin-right: 30px;
 
 @media screen and (max-width: 1024px) {
   margin: 0;
+  align-items: center;
+  width: 100%;
 }
 `
 
@@ -229,19 +251,17 @@ flex-direction: column;
 
 export const Select = styled.div`
 display: flex;
-margin-bottom: 20px;
+margin-bottom: 40px;
 `
 
 export const Choice = styled.button`
 margin-right: 20px;
 background-color: #fff;
 border-radius: 26px;
-width: 120px;
+width: 130px;
 height: 40px;
 white-space: nowrap;
-padding: '12px 64px';
 color: #7f7f7f;
-font-size: '20px' ;
 outline: none;
 border: 1px solid #979797;
 cursor: pointer;
@@ -253,11 +273,16 @@ cursor: pointer;
 }
 
 @media screen and (max-width: 960px){
-  width: 450px;
+  width: 110px;
   }
 
-@media screen and (max-width: 820px) {
-  width: 100%;
+  @media screen and (max-width: 415px) {
+  width: 95px;
+}
+
+@media screen and (max-width: 412px) {
+  width: 45px;
+  font-size: 9px;
 }
 `
 
@@ -278,7 +303,51 @@ box-shadow: 0px 10px 20px #2C27381A;
 }
 
 @media screen and (max-width: 820px) {
-  width: 100%;
+  width: 400px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 415px) {
+  width: 350px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
+  margin: 0 0 16px 0;
+}
+`
+
+export const Address = styled.textarea`
+padding: 10px 20px;
+border-radius: 6px;
+margin-bottom: 20px;
+outline: none;
+border: none;
+font-size: 16px;
+border: 1px solid #267832;
+width: 450px;
+height: 90px;
+resize: none;
+box-shadow: 0px 10px 20px #2C27381A;
+
+&::placeholder {
+  color: #7F7F7F;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 820px) {
+  width: 400px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 415px) {
+  width: 350px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
   margin: 0 0 16px 0;
 }
 `
@@ -286,6 +355,11 @@ box-shadow: 0px 10px 20px #2C27381A;
 export const Area = styled.div`
 display: flex;
 margin-bottom: 20px;
+
+@media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
+
 `
 
 export const City = styled.input`
@@ -301,6 +375,19 @@ box-shadow: 0px 10px 20px #2C27381A;
 
 @media screen and (max-width: 1200) {
   width: 35%;
+}
+
+@media screen and (max-width: 820px) {
+  width: 400px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 415px) {
+  width: 350px;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
 }
 
 &::placeholder {
@@ -322,6 +409,20 @@ box-shadow: 0px 10px 20px #2C27381A;
 
 @media screen and (max-width: 1200) {
   width: 35%;
+}
+
+@media screen and (max-width: 820px) {
+  width: 400px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 415px) {
+  width: 350px;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
+  margin: 0 0 16px 0;
 }
 `
 
@@ -345,9 +446,23 @@ box-shadow: 0px 10px 20px #2C27381A;
     width: 300px;
   }
 
-  @media screen and (max-width: 820px) {
-    width: 100%;
+  @media screen and (max-width: 1024px) {
+    width: 450px;
   }
+
+  @media screen and (max-width: 820px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 415px) {
+  width: 350px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
+  margin: 0 0 16px 0;
+}
 `
 
 export const DateTime = styled.input`
@@ -364,11 +479,19 @@ box-shadow: 0px 10px 20px #2C27381A;
 &::placeholder {
   color: #7F7F7F;
   opacity: 0.5;
-
 }
 
 @media screen and (max-width: 820px) {
-  width: 100%;
+  width: 400px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 415px) {
+  width: 350px;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
   margin: 0 0 16px 0;
 }
 `
@@ -376,7 +499,6 @@ box-shadow: 0px 10px 20px #2C27381A;
 export const TimeZone = styled.select`
 padding: 10px 20px;
 border-radius: 6px;
-margin-bottom: 20px;
 outline: none;
 border: none;
 font-size: 16px;
@@ -389,13 +511,24 @@ box-shadow: 0px 10px 20px #2C27381A;
     opacity: 0.5;
   }
 
-  @media screen and (max-width: 1200px) {
-    width: 300px;
+  @media screen and (max-width: 1024px) {
+    width: 450px;
+    margin-bottom: 20px;
   }
 
   @media screen and (max-width: 820px) {
-    width: 100%;
+    width: 400px;
   }
+
+  @media screen and (max-width: 415px) {
+  width: 350px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
+  margin: 0 0 16px 0;
+}
 `
 
 export const FormSelect = styled.select`
@@ -419,9 +552,19 @@ export const FormSelect = styled.select`
   }
 
   @media screen and (max-width: 820px) {
-    width: 100%;
+    width: 400px;
     margin: 0 0 16px 0;
   }
+
+  @media screen and (max-width: 415px) {
+  width: 350px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
+  margin: 0 0 16px 0;
+}
 `
 
 export const EventTime = styled.div`
@@ -442,6 +585,7 @@ margin-right: 20px;
 
 @media screen and (max-width: 820px) {
     margin: 0;
+    align-items: center;
   }
 `
 
@@ -453,6 +597,7 @@ margin-left: 20px;
 
 @media screen and (max-width: 820px) {
     margin: 0;
+    align-items: center;
   }
 `
 
@@ -477,12 +622,53 @@ export const SigninLink = styled(Link)`
 `
 
 export const TicketLink = styled(Link)`
-text-decoration: none;
-width: 150px;
+/* text-decoration: none; */
+margin-right: 0px;
+width: 100px;
 height: 50px;
 
 @media screen and (max-width: 960px){
     width: 450px;
+  }
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
+`
+
+export const PreviousLink = styled(Link)`
+/* text-decoration: none; */
+margin-right: 150px;
+width: 250px;
+height: 50px;
+
+@media screen and (max-width: 1025px){
+    margin-right: 60px;
+    }
+
+@media screen and (max-width: 960px){
+    width: 450px;
+    margin: 0 0 10px 0;
+    }
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
+`
+
+export const ForwardLink = styled(Link)`
+/* text-decoration: none; */
+margin-left: 150px;
+width: 250px;
+height: 50px;
+
+@media screen and (max-width: 1025px){
+    margin-left: 60px;
+    }
+
+@media screen and (max-width: 960px){
+    width: 450px;
+    margin: 10px 0 0 0;
     }
 
   @media screen and (max-width: 820px) {
@@ -493,7 +679,7 @@ height: 50px;
 export const Button = styled.button`
 background-color: #267832;
 border-radius: 6px;
-width: 150px;
+width: 100px;
 height: 50px;
 white-space: nowrap;
 color: #fff;
@@ -504,6 +690,29 @@ cursor: pointer;
 
   @media screen and (max-width: 960px){
     width: 450px;
+    margin: 0;
+    }
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
+`
+
+export const Forward = styled.button`
+background-color: #267832;
+border-radius: 6px;
+width: 250px;
+height: 50px;
+white-space: nowrap;
+color: #fff;
+outline: none;
+border: none;
+box-shadow: 0px 10px 20px #2C27381A;
+cursor: pointer;
+
+  @media screen and (max-width: 960px){
+    width: 450px;
+    margin: 0;
     }
 
   @media screen and (max-width: 820px) {
@@ -513,11 +722,17 @@ cursor: pointer;
 
 export const EventHeader = styled.div`
 color: #267832;
-margin: 10px;
+margin: 10px 10px 40px 10px;
 ` 
+
+export const DateHeader = styled.div`
+color: #267832;
+margin: 0 10px 10px 10px;
+`
 
 export const ButtonBox = styled.div`
 display: flex;
+justify-content: center;
 margin-bottom: 20px;
 
 @media screen and (max-width: 960px){
@@ -527,8 +742,8 @@ margin-bottom: 20px;
 
 export  const TitleImage = styled.img`
   width: 300px;
-  height: 162px;
-  margin-top: 37px;
+  height: 155px;
+  margin-top: 20px;
   border-radius: 6px;
   box-shadow: 0px 10px 20px #2C27381A;
   cursor: pointer;
@@ -537,9 +752,25 @@ export  const TitleImage = styled.img`
     width: 450px;
   }
 
-  @media screen and (max-width: 820px) {
-    width: 100%;
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
+
+  @media screen and (max-width: 820px) {
+    width: 400px;
+    margin: 0 0 16px 0;
+  }
+
+  @media screen and (max-width: 415px) {
+  width: 350px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
+  margin: 0 0 16px 0;
+}
 `
 
 export const ImageButton = styled.button`
@@ -548,10 +779,10 @@ display: flex;
   justify-content: center;
   font-size: 18px;
   border: 1px solid #267832;
-  margin-top: 37px;
+  margin-top: 20px;
   background: #fff;
   width: 300px;
-  height: 162px;
+  height: 155px;
   border-radius: 6px;
   box-shadow: 0px 10px 20px #2C27381A;
   cursor: pointer;
@@ -559,6 +790,43 @@ display: flex;
   @media screen and (max-width: 1200px) {
     width: 450px;
   }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 820px) {
+    width: 400px;
+    margin: 0 0 16px 0;
+  }
+
+  @media screen and (max-width: 415px) {
+  width: 350px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 412px) {
+  width: 200px;
+  margin: 0 0 16px 0;
+}
+`
+
+export const Back = styled.button`
+background-color: #B6D982;
+border-radius: 6px;
+width: 250px;
+height: 50px;
+white-space: nowrap;
+color: #7F7F7F;
+outline: none;
+border: none;
+box-shadow: 0px 10px 20px #2C27381A;
+cursor: pointer;
+
+  @media screen and (max-width: 960px){
+    width: 450px;
+    }
 
   @media screen and (max-width: 820px) {
     width: 100%;

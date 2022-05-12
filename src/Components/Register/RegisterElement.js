@@ -82,8 +82,9 @@ export const Form = styled.form`
   margin: 10px 200px 10px 200px;
   /* margin:20px ; */
 
-  @media screen and (max-width: 768px) {
-    margin: 10px 0px 10px 30px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    margin: 0;
   }
 `;
 

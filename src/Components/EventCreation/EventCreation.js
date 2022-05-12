@@ -584,7 +584,7 @@ const EventCreation = () => {
             <ButtonBox>
             <PreviousLink to="">
             <Back to="">
-               <strong>Previous/Back</strong> 
+               <strong>Back/Prev</strong> 
             </Back>
             </PreviousLink>
             <ForwardLink to="/event-ticket">

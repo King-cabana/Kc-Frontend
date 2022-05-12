@@ -6,9 +6,9 @@ import { FaClipboardList } from 'react-icons/fa'
 import { GiReceiveMoney } from 'react-icons/gi'
 import { AiFillFileText } from 'react-icons/ai'
 
-import { DateBox, Fee, TicketLink, Left, Choice, EventDate, Qty, DateInput, Sale, Date1, Date2, Timeline, Line, InnerLine, List, ListNo, TimelinePoint, Steps, TicketHeader, Add, SideBar, ImgWrap, Img, Menu, MenuButton, MenuLink, Select, ButtonBox, Button, Form, FormInput,FormSelect, EventNeedLinks, Main, Body, InfoBox, FormSquare } from './EventTicketingElement'
+import { DateBox, Fee, TicketLink, Left, Choice, EventDate, Qty, DateInput, Sale, Date1, Date2, Timeline, Line, InnerLine, List, ListNo, TimelinePoint, Steps, TicketHeader, Add, SideBar, ImgWrap, Img, Menu, MenuButton, MenuLink, Select, Button, Form, FormInput,FormSelect, EventNeedLinks, Main, Body, InfoBox, FormSquare } from './EventTicketingElement'
 import background from '../../images/bg.png'
-import { Back } from "../EventCreation/EventCreationElement";
+import { ButtonBox, Back, Forward, ForwardLink, PreviousLink } from "../EventCreation/EventCreationElement";
 
 const EventTicketing = () => {
     const [image, setImage] = useState();
@@ -119,16 +119,18 @@ const EventTicketing = () => {
            </EventDate>
            </FormSquare>
            </InfoBox>
-          
-           <ButtonBox>
-             <Back to="/event-ticket">
-               <strong>Previous/Back</strong> 
-             </Back>
-            <TicketLink to="/eventNeed">
-            <Button to="/eventNeed">
+
+            <ButtonBox>
+            <PreviousLink to="">
+            <Back to="">
+               <strong>Back/Prev</strong> 
+            </Back>
+            </PreviousLink>
+            <ForwardLink to="/eventNeed">
+            <Forward to="/eventNeed">
                <strong>Save/Next</strong> 
-            </Button>
-            </TicketLink>
+            </Forward>
+            </ForwardLink>
             </ButtonBox>
               
              
